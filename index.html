@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repas & Conférence Bien-Être - Seniors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="images/hero.jpg" alt="Repas seniors" class="hero-image">
+        <h1>Repas gratuit & conférence bien-être pour les seniors</h1>
+        <p>Venez partager un moment convivial autour d’un bon repas suivi d’une conférence sur le mal de dos.</p>
+        <a href="#formulaire" class="cta-button">Réserver ma place gratuitement</a>
+    </header>
+
+    <section id="apropos">
+        <h2>Pourquoi participer ?</h2>
+        <ul>
+            <li>Un repas offert dans votre ville</li>
+            <li>Des conseils pratiques pour soulager vos douleurs dorsales</li>
+            <li>Un moment chaleureux et sans engagement</li>
+        </ul>
+    </section>
+
+    <section id="carte">
+        <h2>Nos événements près de chez vous</h2>
+        <div id="map" style="height: 300px;"></div>
+    </section>
+
+    <section id="formulaire">
+        <h2>Réservez votre place</h2>
+        <form action="mailto:cortesdorian2020@gmail.com" method="POST" enctype="text/plain">
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="Nom" required>
+            <label for="prenom">Prénom :</label>
+            <input type="text" id="prenom" name="Prénom" required>
+            <label for="telephone">Téléphone :</label>
+            <input type="tel" id="telephone" name="Téléphone" required>
+            <label for="ville">Ville :</label>
+            <input type="text" id="ville" name="Ville" required>
+            <button type="submit">Envoyer</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>Contact : cortesdorian2020@gmail.com</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY&callback=initMap"></script>
+</body>
+</html>
